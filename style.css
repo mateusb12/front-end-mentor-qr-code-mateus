@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
 
+:root {
+    --debug-border: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,42 +13,52 @@
 body {
     font-family: 'Outfit', sans-serif;
     background-color: hsl(212, 45%, 89%);
-    height: 100%;
 }
 
 .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    height: 99vh;
+    border: #ff0000 5px var(--debug-border);
 }
 
 .card {
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 17px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    width: 50%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 17px;
+    width: 20%;
+    border: #0b7e00 5px var(--debug-border);
 }
 
-.qr-code-src{
+.qr-code-src {
     width: 90%;
     height: auto;
     border-radius: 12px;
     margin: 15px;
+    border: #d2b000 5px var(--debug-border);
 }
 
-.text{
-    max-width: 80%;
+.text {
     text-align: center;
     gap: 0.5rem;
-    padding-bottom: 30px;
-    color: hsl(218, 44%, 22%);
+    max-width: 80%;
+    margin: auto;
+    border: #fc6b05 5px var(--debug-border);
 }
 
-#description{
-    margin-top: 15px;
+#title {
+    margin-bottom: 25px;
+    color: hsl(218, 44%, 22%);
+    border: #dc00ff 5px var(--debug-border);
+}
+
+#description {
+    margin-bottom: 70px;
     color: hsl(220, 15%, 55%);
+    border: #0022ff 5px var(--debug-border);
 }
