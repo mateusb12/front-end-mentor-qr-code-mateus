@@ -25,21 +25,17 @@ body {
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: hsl(0, 0%, 100%);
     border-radius: 17px;
-    width: 20%;
+    width: 400px;
+    padding: 20px;
     border: #0b7e00 5px var(--debug-border);
 }
 
 .qr-code-src {
-    width: 90%;
-    height: auto;
+    width: 100%;
     border-radius: 12px;
-    margin: 15px;
+    box-sizing: border-box;
     border: #d2b000 5px var(--debug-border);
 }
 
@@ -52,13 +48,15 @@ body {
 }
 
 #title {
-    margin-bottom: 25px;
+    margin: 15px;
     color: hsl(218, 44%, 22%);
     border: #dc00ff 5px var(--debug-border);
 }
 
 #description {
-    margin-bottom: 70px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
     color: hsl(220, 15%, 55%);
     border: #0022ff 5px var(--debug-border);
 }
